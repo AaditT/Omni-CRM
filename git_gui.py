@@ -4,6 +4,12 @@ import tkinter as tk
 import os
 import subprocess
 
+# git branch
+# git pull
+# git merge
+# git push
+# git status
+
 
 root = tk.Tk()
 root.title("Omniscient Git GUI")
