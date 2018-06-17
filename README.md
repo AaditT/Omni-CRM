@@ -4,4 +4,7 @@
 Using Xcode
 
 ## Git GUI
-Using tkinter
+Using tkinter (standard Python GUI library)
+
+Python 3 (or above): `import tkinter`
+Python 2 (or below): `import Tkinter`
