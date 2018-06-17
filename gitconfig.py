@@ -9,6 +9,10 @@ def config():
     email = emailEntry.get()
     os.system('git config --global user.name "'+str(username)+'"')
     os.system('git config --global user.email '+str(email))
+    usernameEntry.delete(0, END)
+    emailEntry.delete(0, END)
+    successLabel = tk.Label(text="Configured!")
+    successLabel.grid(row=2,column=1)
 
 usernameLabel = tk.Label(text="Username: ")
 usernameLabel.grid(row=0,column=0)
