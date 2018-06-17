@@ -1,2 +1,7 @@
 # Omni-CRM
-An iOS interface for Omniscient CRM
+
+## iOS interface
+Using Xcode
+
+## Git GUI
+Using tkinter
