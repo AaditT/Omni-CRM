@@ -9,3 +9,5 @@ Using tkinter (standard Python GUI library)
 Python 3 (or above): `>>> import tkinter`
 
 Python 2 (or below): `>>> import Tkinter`
+
+Alternative Python GUI library: `$ pip3 install QtPy`
