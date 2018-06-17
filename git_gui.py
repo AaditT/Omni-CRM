@@ -23,9 +23,6 @@ response.set("")
 def update(s):
     messagebox.showinfo("Alert",str(s))
 
-def quit():
-	root.destroy()
-    
 def get_output(cmd):
     v = subprocess.call(str(cmd))
     if str(v) == "128":
@@ -45,7 +42,6 @@ clone_entry = tk.Entry(root,width=40)
 clone_entry.grid(row=1, column=2)
 clone_button = tk.Button(root,text="Clone",command=clone_repo)
 clone_button.grid(row=1, column=3)
-quitButton = tk.Button(text=“Quit”,command=quit)
-quitButton.grid(row=5,column=0)
+
 
 root.mainloop()
