@@ -69,7 +69,7 @@ def open_repo():
     keyboard.press_and_release('ctrl+c')
     os.system("cd "+str(repository))
 
-logo = ImageTk.PhotoImage(Image.open("C:/Users/aadit/Desktop/logo.jpg"))
+logo = ImageTk.PhotoImage(Image.open("https://photos.app.goo.gl/9hrx9bKMfcUi76c39"))
 panel = Label(root, image = logo)
 panel.grid(row=0,column=1)
 
