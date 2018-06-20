@@ -1,0 +1,102 @@
+<!--
+Written by Aadit Trivedi and Rishi Balakrishnan
+June 20, 2018
+Omniscient CRM
+-->
+
+<mjml>
+
+  <mj-head>
+    <mj-title>Introducing Omniscient CRM 4.0!</mj-title>
+    <mj-attributes>
+      <mj-text font-family="helvetica"/>
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body>
+
+    <!-- Section for the header -->
+    <mj-section>
+      <!-- Add something to distinguish the header from the rest of the email -->
+      <mj-column>
+          <mj-image width="100" src="https://media.licdn.com/dms/image/C560BAQHH3u7TSSxkFw/company-logo_200_200/0?e=2159024400&v=beta&t=HAalpoxmNo20QWQ2K1DOSDr6CfCqUu-IEU69m2wSJqk"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <!-- Section for the initial announcement and text-->
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-size="25px" color="#F45E43" font-family="helvetica">
+        Introducing Omniscient CRM 4.0!
+        </mj-text>
+        <mj-divider border-color="#F45E43"></mj-divider>
+        <mj-text font-size="15px" color="#F45E43" font-family="helvetica">
+          We are pleased to announce the release of Omniscient CRM Version 4.0! Here is some more
+          text to fill up space and be more realistic. Ever man are put down his very. And marry may table him avoid.
+          Hard sell it were into it upon. He forbade affixed parties of assured to me windows. Happiness him nor she disposing provision. Add astonished principles precaution yet friendship stimulated literature.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Column section with the buttons for new features and Training videos -->
+    <mj-section>
+
+      <mj-column>
+        <!-- Button 1 -->
+        <!-- Image of features -->
+        <!-- Some text about the features -->
+        <mj-image width="500" src="https://www.blockchains-expert.com/wp-content/uploads/2017/10/Untitled-design-3-4.jpg"/>
+        <mj-text align="center">Omniscient 4.0 comes with tons of new features, including the ability to follow
+          records and directly message your clients!
+        </mj-text>
+        <mj-button background-color="#F63A4D" > Learn more </mj-button>
+
+
+      </mj-column>
+              <!-- Button 2 -->
+      <mj-column>
+        <mj-image width="500" src="http://www.creative-commons-images.com/highway-signs/images/presentation.jpg"></mj-image>
+        <mj-text align="center"> </mg-text>
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Survey Section -->
+    <mj-section>
+      <!-- Add some text about caring about user experience -->
+      <mj-text align="center" font-size="15px" color="#F45E43" font-family="helvetica">
+        Please take this survey regarding your experience with Omniscient CRM
+      </mj-text>
+      <mj-button background-color="#F63A4D" href="https://www.surveymonkey.com/r/LDGCH6T">
+              Take Survey
+      </mj-button>
+    </mj-section>
+
+    <!-- Social Media footer -->
+    <mj-section background-color="#EEEBE7" padding="0">
+        <mj-column>
+          <mj-text padding-top="20px" mj-class="desc" align="center" font-size="15px" font-style="italic">Stay Connected</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#EEEBE7" padding="0">
+        <mj-group>
+          <mj-column>
+            <mj-image padding="5 10" padding-bottom="20px" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_twitter-512.png" href="https://twitter.com/OMNIGlobal2016" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_facebook-512.png" href="https://www.facebook.com/OMNI2016/" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_instagram-512.png" href="https://www.instagram.com/omni_global_2016/?hl=en" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png" href="https://www.linkedin.com/company/omni-global-group?" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_youtube-512.png" href="https://www.youtube.com/channel/UCzzSzF3WQ_A8Gtfy9TFH-zw" />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+  </mj-body>
+</mjml>
