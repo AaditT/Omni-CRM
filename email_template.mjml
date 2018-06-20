@@ -1,0 +1,98 @@
+<!--
+Written by Aadit Trivedi and Rishi Balakrishnan
+June 20, 2018
+Omniscient CRM
+-->
+
+<mjml>
+
+  <mj-head>
+    <mj-title> EMAIL TITLE </mj-title>
+    <mj-attributes>
+      <mj-text font-family="Gill Sans MT" color="#12128E"/>
+      <mj-class name="pill" font-weight="700" color="#d5ad4b" border-collapse="100" border="2px solid #d5ad4b" font-size="16px" line-height="16px" padding=" 20 20 20" inner-padding="10px 75px 10px 75" background-color="transparent" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body font-family="Calibri">
+
+    <!-- Section for the header -->
+    <mj-section padding="0">
+      <!-- Add something to distinguish the header from the rest of the email -->
+      <mj-column>
+          <mj-image width="80" src="LOGO.png"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <!-- Section for the initial announcement and text-->
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-size="25px"font-family="helvetica">
+        Email Headline
+        </mj-text>
+        <mj-divider border-color="#F45E43"></mj-divider>
+        <mj-text font-size="15px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et est tempor, bibendum metus et, scelerisque lectus. Nunc nisi lectus, pretium sed suscipit sit amet, volutpat at nulla. Cras non odio at ante congue cursus a id erat. Donec bibendum, lectus eu commodo efficitur, ex erat ultrices mi, in semper purus purus ut nibh. Ut gravida purus nibh, id aliquet metus maximus et. Morbi eget tincidunt dolor. Morbi eget congue dolor. Donec consequat metus vel sapien lacinia, ut laoreet urna condimentum. Nunc convallis neque et cursus scelerisque. Mauris eget tortor lacinia, venenatis odio in, ullamcorper libero. Nam et ante vel est maximus fringilla. Aenean pharetra efficitur malesuada. Cras suscipit neque sed justo ultrices ultrices.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Column section with the buttons for new features and Training videos -->
+    <mj-section>
+
+      <mj-column>
+        <!-- Button 1 -->
+        <!-- Image of features -->
+        <!-- Some text about the features -->
+        <mj-image width="500" src="image.png"/>
+        <mj-text align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et est tempor, bibendum metus et, scelerisque lectus.
+        </mj-text>
+        <mj-button href="#"> Button </mj-button>
+
+
+      </mj-column>
+              <!-- Button 2 -->
+      <mj-column>
+        <mj-image width="300" src="image.jpg"></mj-image>
+        <mj-text align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et est tempor, bibendum metus et, scelerisque lectus.</mj-text>
+        <mj-button background-color="#1D8ACB" href="#" > Button </mj-button>
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Survey Section -->
+    <mj-section>
+      <!-- Add some text about caring about user experience -->
+      <mj-text align="center" font-size="15px" font-family="helvetica">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et est tempor, bibendum metus et, scelerisque lectus.      </mj-text>
+      <mj-button background-color="#1D8ACB" href="https://www.surveymonkey.com/r/LDGCH6T">Button</mj-button>
+    </mj-section>
+
+    <!-- Social Media footer -->
+    <mj-section background-color="#EEEBE7" padding="50">
+        <mj-column>
+          <mj-text padding-top="20px" mj-class="desc" align="center" font-size="15px" font-style="italic">Stay Connected</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#EEEBE7" padding="0" padding-bottom="30px">
+        <mj-group>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_twitter-512.png" href="https://twitter.com/OMNIGlobal2016" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_facebook-512.png" href="https://www.facebook.com/OMNI2016/" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_instagram-512.png" href="https://www.instagram.com/omni_global_2016/?hl=en" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png" href="https://www.linkedin.com/company/omni-global-group?" />
+          </mj-column>
+          <mj-column>
+            <mj-image padding="5 10" width="25px" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_youtube-512.png" href="https://www.youtube.com/channel/UCzzSzF3WQ_A8Gtfy9TFH-zw" />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+  </mj-body>
+</mjml>
