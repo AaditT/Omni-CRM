@@ -1,4 +1,5 @@
 import tkinter
+import webbrowser
 
 root = tkinter.Tk()
 root.title("Generate MJML Email Template")
@@ -39,12 +40,9 @@ def gen():
             """
         else:
             added_code+= """
-            <mj-text align='center' font-size="30px" color="#F45E43" font-family="helvetica">"""+str(h_entry.get())+"""</mj-text>
-            """
-        
-        
-    
-    
+            <mj-text align='center' font-size="30px" color="#F45E43" font-family="helvetica">"""+str(h_entry.get())+"""</mj-text>"""
+
+
     added_code += """
     </mj-column>
     </mj-body>
@@ -55,6 +53,11 @@ def gen():
     code += added_code
     
     print(code)
+    def openn():
+        webbrowser.open_new_tab("https://mjml.io/try-it-live/By-dBEq-X")
+
+    openb = tkinter.Button(text="Open in MJML Editor",command=openn)
+    openb.grid(row=11,column=0)
 
 
 
