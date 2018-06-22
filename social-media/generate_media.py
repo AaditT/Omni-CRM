@@ -4,64 +4,100 @@ root = tkinter.Tk()
 root.title("Generate Media Widgets")
 root.geometry("720x150")
 
+global code
+code = """
+<!DOCTYPE html>
+    <hmtl>
+        <head>
+            <meta charset="utf-8">
+            <title>
+                Social Media
+            </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+"""
+
+global end_code
+end_code = """
+        </body>
+    </html>
+"""
+
 def lgen():
     url = l_entry.get()
     url = '"' + url + '"'
-    print("""
-    <!-- LinkedIn Widget HTML **************************************************-->
-    <script src=“//platform.linkedin.com/in.js” type=“text/javascript”></script>
-    <script type=“IN/MemberProfile” 
-    data-id="""+ url+ """ data-format=“inline” 
-    data-related=“false”></script>
-    <!-- ***********************************************************************-->
-    """)
+    print(code + """
+    <!-- LinkedIn Widget HTML ***********************************************-->
+            <div>
+                <script src=“//platform.linkedin.com/in.js” 
+                type=“text/javascript”></script>
+                <script type=“IN/MemberProfile” 
+                data-id=""" + str(url) + """ data-format=“inline” 
+                data-related=“false”></script>
+            </div>
+    <!-- ********************************************************************-->
+    """ + end_code)
     l_entry.insert(0,"")
 
 def ttgen():
     url = tt_entry.get()
     url = '"' + url + '"'
-    print("""
-    <!-- Twitter Timeline HTML *************************************************-->
-    <a class="twitter-timeline" width="100px" height="100px" 
-    href="""+url+""">Tweets</a> 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-    </script>
-    <!-- ***********************************************************************-->
-    """)
+    print(code+"""
+    <!-- Twitter Timeline HTML **********************************************-->
+            <div>
+                <a class="twitter-timeline" width="100px" height="100px" 
+                href="""+str(url)+""">Tweets</a> 
+                <script async src="https://platform.twitter.com/widgets.js" 
+                charset="utf-8">
+                </script>
+            </div>
+    <!-- ********************************************************************-->
+    """+end_code)
     tt_entry.insert(0,"")
 
 def fgen():
     url = f_entry.get()
-    print("""
-    <!-- Google Plus Profile HTML **********************************************-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <div class="g-person" data-href="//plus.google.com/"""+url+"""" data-rel="author">
-    </div>
-    <!-- ***********************************************************************-->
-    """)
+    print(code+"""
+    <!-- Google Plus Profile HTML *******************************************-->
+            <div>
+                <script src="https://apis.google.com/js/platform.js" 
+                async defer></script>
+                <div class="g-person" data-href="//plus.google.com/"""+url+""""
+                data-rel="author">
+                </div>
+            </div>
+    <!-- ********************************************************************-->
+    """+end_code)
     f_entry.insert(0, "")
 
 def tttgen():
     url = tt_entry.get()
     url = '"' + url
-    print("""
-    <!-- Twitter Follow Button HTML ********************************************-->
-    <a href="""+url+"""?ref_src=twsrc%5Etfw" class="twitter-follow-button" 
-    data-show-count="false">Follow</a><script async 
-    src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <!-- ***********************************************************************-->
-    """)
+    print(code+"""
+    <!-- Twitter Follow Button HTML *****************************************-->
+            <div>
+                <a href="""+str(url)+"""?ref_src=twsrc%5Etfw" 
+                class="twitter-follow-button" 
+                data-show-count="false">Follow</a><script async 
+                src="https://platform.twitter.com/widgets.js" 
+                charset="utf-8"></script>
+            </div>
+    <!-- ********************************************************************-->
+    """+end_code)
     tt_entry.insert(0,"")
 
 def ygen():
     url = y_entry.get()
-    print("""
-    <!-- YT Subscribe Button HTML **********************************************-->
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <div class="g-ytsubscribe" data-channel='"""+str(url)+"""'
-    data-layout="default" data-count="default"></div>
-    <!-- ***********************************************************************-->
-    """)
+    print(code+"""
+    <!-- YT Subscribe Button HTML *******************************************-->
+            <div>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channel='"""+str(url)+"""'
+                data-layout="default" data-count="default"></div>
+            </div>
+    <!-- ********************************************************************-->
+    """+end_code)
     y_entry.insert(0,"")
 
 l_label = tkinter.Label(text="LinkedIn User URL: ")
@@ -91,7 +127,7 @@ y_label = tkinter.Label(text="Youtube Channel Name: ")
 y_label.grid(row=6,column=0)
 y_entry = tkinter.Entry()
 y_entry.grid(row=6,column=1)
-y_button = tkinter.Button(text="YT Subscribe Buton HTML",command=ygen)
+y_button = tkinter.Button(text="YT Subscribe Button HTML",command=ygen)
 y_button.grid(row=6,column=2)
 
 root.mainloop()
