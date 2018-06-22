@@ -18,6 +18,12 @@ def searchUser():
     else:
         messagebox.showinfo("Alert","404: Twitter user does not exists")
     
+def isTwitterUser(usrname):
+    turl = "https://twitter.com/"+str(usrname)
+    request = requests.get(turl)
+    if request.status_code == 200: return True
+    else: return False
+
 
 label = tk.Label(text="Twitter User: ")
 label.grid(row=0,column=0)
