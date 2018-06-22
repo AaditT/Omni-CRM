@@ -1,10 +1,8 @@
-# Script that creates a GUI which users can easily create HTML widgets with
-
 import tkinter
 
 root = tkinter.Tk()
 root.title("Generate Media Widgets")
-root.geometry("720x100")
+root.geometry("720x150")
 
 def lgen():
     url = l_entry.get()
@@ -55,6 +53,17 @@ def tttgen():
     """)
     tt_entry.insert(0,"")
 
+def ygen():
+    url = y_entry.get()
+    print("""
+    <!-- YT Subscribe Button HTML **********************************************-->
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <div class="g-ytsubscribe" data-channel='"""+str(url)+"""'
+    data-layout="default" data-count="default"></div>
+    <!-- ***********************************************************************-->
+    """)
+    y_entry.insert(0,"")
+
 l_label = tkinter.Label(text="LinkedIn User URL: ")
 l_label.grid(row=2,column=0)
 l_entry = tkinter.Entry()
@@ -77,5 +86,12 @@ f_entry = tkinter.Entry()
 f_entry.grid(row=5,column=1)
 f_button = tkinter.Button(text="Google Plus Widget HTML",command=fgen)
 f_button.grid(row=5,column=2)
+
+y_label = tkinter.Label(text="Youtube Channel Name: ")
+y_label.grid(row=6,column=0)
+y_entry = tkinter.Entry()
+y_entry.grid(row=6,column=1)
+y_button = tkinter.Button(text="YT Subscribe Buton HTML",command=ygen)
+y_button.grid(row=6,column=2)
 
 root.mainloop()
