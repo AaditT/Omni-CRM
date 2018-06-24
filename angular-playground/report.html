@@ -1,13 +1,57 @@
-<!-- Live report -->
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body>
-<div ng-app="">
-  <form>
-    First Name: <input type="text" ng-model="firstname">
-  </form>
-  <h1>You entered: {{firstname}}</h1>
-</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <body>
+      <script>
+      $(document).ready(function(){
+          $("button").click(function(){
+              $("input:text").val("");
+          });
+      });
+      </script>
+    <div ng-app="">
+      <form>
+        Cash: <input id="cash" type="text" ng-model="cash">
+      </form>
+      <form>
+        Stocks: <input id="stocks" type="text" ng-model="stocks">
+      </form>
+      <button>Clear</button>
+      <h1>Cash: {{cash}} </h1>
+      <h1>Stocks: {{stocks}} </h1>
+    </div>
+    <!--
+    <canvas id="pie-chart" width="800" height="450"></canvas>
+    -->
+    <canvas id="doughnut-chart" width="800" height="450"></canvas>
+    <script>
+      var cash = document.getElementById("cash").value
+      var stocks = document.getElementById("stocks").value
+      // new Chart(document.getElementById("pie-chart")), {
+      new Chart(document.getElementById("doughnut-chart"), {
+        // type: 'pie',
+        type: 'doughnut',
+        data: {
+          labels: ["Cash", "Stocks"],
+          datasets: [
+            {
+              label: "Population (millions)",
+              backgroundColor: ["#3e95cd", "#8e5ea2"],
+              data: [20,2]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Assets'
+          }
+        }
+  });
+  </script>
 </body>
 </html>
+
+
