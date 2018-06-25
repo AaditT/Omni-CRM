@@ -1,0 +1,37 @@
+<!-- Asset Allocation among Cash and Stocks -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+   <body>
+      Cash: <input type="text" id="fname" onkeyup="drawChart()">
+      <br>
+      Stocks: <input type="text" id="lname" onkeyup="drawChart()">
+      <div id="piechart"></div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+         // Load google charts
+         google.charts.load('current', {'packages':['corechart']});
+         google.charts.setOnLoadCallback(drawChart);
+         var entry = 1
+         var find = 1
+         // Draw the chart and set the chart values
+         function drawChart() {
+           var entry = parseInt(document.getElementById('fname').value);
+           var find = parseInt(document.getElementById('lname').value);
+         
+           var data = google.visualization.arrayToDataTable([
+           ['Asset', 'Allocation'],
+           ['Cash', entry],
+           ['Stocks', find]
+         ]);
+         
+           // Optional; add a title and set the width and height of the chart
+           var options = {'title':'Asset Allocation', 'width':550, 'height':400};
+         
+           // Display the chart inside the <div> element with id="piechart"
+           var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+           chart.draw(data, options);
+         }
+      </script>
+   </body>
+</html>
