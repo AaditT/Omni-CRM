@@ -1,0 +1,60 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://unpkg.com/vue@latest"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue-simple-search-dropdown@latest/dist/vue-simple-search-dropdown.min.js"></script>
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 3em;
+      }
+      h1 {
+        font-weight: 100;
+        font-size: 1.5em;
+      }
+      p {
+        font-size: .8em;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <Dropdown
+        :options="options"
+        v-on:selected="validateSelection"
+        v-on:filter="getDropdownValues"
+        :disabled="false"
+        placeholder="Fruit">
+      </Dropdown>
+      <p>Selected fruit: {{ selected.name || 'none' }}</p>
+    </div>
+    <script type="text/javascript">
+      Vue.use(Dropdown);
+      new Vue({
+        el: '#app',
+        data () {
+          return {
+            options: [
+              { name: 'Apple', id: 'apple' },
+              { name: 'Orange', id: 'orange' },
+              { name: 'Banana', id: 'banana' },
+              { name: 'Grapes', id: 'grapes' },
+              { name: 'Strawberry', id: 'strawberry' },
+              { name: 'Mango', id: 'mango' },
+              { name: 'Grapefruit', id: 'grapefruit' }
+            ],
+            selected: { name: null, id: null }
+          }
+        },
+        methods: {
+          validateSelection(selection) {
+            this.selected = selection;
+          },
+          getDropdownValues(keyword) {
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
