@@ -2,35 +2,35 @@
 <!-- IT WAS RELEASED UNDER THE MIT LICENSE https://opensource.org/licenses/MIT -->
 <!-- QUESTIONS? TWEET US @LITMUSAPP -->
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
-    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title>Coming Soon - [Plain HTML]</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+
+    <mEta charsET=utf-8> <!-- utf-8 works for most cases -->
+    <MeTA naME=viewport COnTeNT=width=device-width> <!-- Forcing initial-scale shouldn't be necessary -->
+    <MetA http-EquiV=X-UA-Compatible coNtEnt="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <META NAMe="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <tiTle>Coming Soon - [Plain HTML]</TitlE> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- Web Font / @font-face : BEGIN -->
     <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
 
     <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
     <!--[if mso]>
-        <style>
+        <STYlE>
             * {
                 font-family: Arial, sans-serif !important;
             }
-        </style>
+        </stYle>
     <![endif]-->
 
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+        <LInk Href=https://fonts.googleapis.com/css?family=Montserrat:300,500 rEl=stylesheet>
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
 
     <!-- CSS Reset -->
-    <style>
+    <sTYLE>
 
         /* What it does: Remove spaces around the email design added by some email clients. */
         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
@@ -149,10 +149,10 @@
             }
         }
 
-    </style>
+    </StYle>
 
     <!-- Progressive Enhancements -->
-    <style>
+    <StyLE>
 
         /* What it does: Hover styles for buttons */
         .button-td,
@@ -209,26 +209,26 @@
             }
         }
 
-    </style>
+    </sTYLe>
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
     <!--[if gte mso 9]>
-    <xml>
-        <o:OfficeDocumentSettings>
-            <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml>
+    <xMl>
+        <o:oFficEDoCUMEnTsettINGs>
+            <O:ALLOWPng/>
+            <o:PiXElsperIncH>96</O:piXElsPeRiNCH>
+        </O:OffICEDOcumentsEttINgs>
+    </xMl>
     <![endif]-->
 
-</head>
-<body width="100%" bgcolor="#F1F1F1" style="margin: 0; mso-line-height-rule: exactly;">
-    <center style="width: 100%; background: #F1F1F1; text-align: left;">
+
+
+    <CentER sTyle="width: 100%; background: #F1F1F1; text-align: left;">
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
-        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
+        <DIV STyle="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
             (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body.
-        </div>
+        </Div>
         <!-- Visually Hidden Preheader Text : END -->
 
         <!--
@@ -237,318 +237,315 @@
             2. MSO tags for Desktop Windows Outlook enforce a 680px width.
             Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
         -->
-        <div style="max-width: 680px; margin: auto;" class="email-container">
+        <diV Style="max-width: 680px; margin: auto;" clAsS=email-container>
             <!--[if mso]>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
-            <tr>
-            <td>
+            <taBLe ROle=presentation ceLLsPACiNG=0 CeLLpADDING="0" bordER="0" WIdTH="680" aliGn="center">
+            <tR>
+            <Td>
             <![endif]-->
 
             <!-- Email Body : BEGIN -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;" class="email-container">
+            <TaBLe rOLe=presentation CellspACing=0 CELlpaddinG="0" BOrder="0" AlIgn=center WiDTh="100%" sTYLE="max-width: 680px;" ClaSs="email-container">
 
 
                 <!-- HEADER : BEGIN -->
-                <tr>
-                    <td bgcolor="#333333">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 30px 40px 30px 40px; text-align: center;">
-                                    <img src="http://omniscientcrm.com/wp-content/themes/omniscient/images/logo.png" width="200" height="30" alt="OMNISCIENT" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+                <Tr>
+                    <TD bgColoR=#333333>
+                        <tAblE Role="presentation" CEllsPaCing=0 cElLPADdINg=0 BoRdeR=0 WIdTH="100%">
+                            <TR>
+                                <TD STylE="padding: 30px 40px 30px 40px; text-align: center;">
+                                    <Img src="http://omniscientcrm.com/wp-content/themes/omniscient/images/logo.png" Width="200" HEIGHT=30 alT="OMNISCIENT" BorDEr=0 stYlE="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+
+                            </tR>
+                        </tabLE>
+                    </TD>
+                </tR>
                 <!-- HEADER : END -->
 
                 <!-- HERO : BEGIN -->
-                <tr>
+                <TR>
                     <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
-                    <td
-                      background="https://email164606341.files.wordpress.com/2018/06/workspace22.png?w=547&h=363" bgcolor="#222222" align="center" valign="top" style="text-align: center; background-position: center center !important; background-size: cover !important;">
+                    <Td                       baCkGROunD="https://email164606341.files.wordpress.com/2018/06/workspace22.png?w=547&h=363" BGCoLOr="#222222" ALiGN="center" VaLiGN="top" StYle="text-align: center; background-position: center center !important; background-size: cover !important;">
                         <!--[if gte mso 9]>
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px; height:380px; background-position: center center !important;">
-                        <v:fill type="tile" src="background.png" color="#222222" />
-                        <v:textbox inset="0,0,0,0">
+                        <V:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px; height:380px; background-position: center center !important;">
+                        <V:FilL type="tile" src="background.png" color="#222222" />
+                        <V:TEXtBoX inset="0,0,0,0">
                         <![endif]-->
-                        <div>
+                        <dIV>
                             <!--[if mso]>
-                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="500">
-                            <tr>
-                            <td align="center" valign="middle" width="500">
+                            <taBlE RolE=presentation boRDer=0 CeLLSPACiNg="0" celLPaDDinG=0 aLigN="center" WiDTH="500">
+                            <tR>
+                            <tD alIgN="center" vALIGn="middle" WIdTh=500>
                             <![endif]-->
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:500px; margin: auto;">
+                            <taBlE rOLE=presentation BOrdeR="0" CElLpaDDInG=0 ceLlSpaCINg="0" Align=center WIdth=100% sTyLe="max-width:500px; margin: auto;">
 
-                                <tr>
-                                    <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
-                                </tr>
+                                <tR>
+                                    <td heiGht="20" sTYle="font-size:20px; line-height:20px;">&nbsp;</TD>
+                                </Tr>
 
-                                <tr>
-                                  <td align="center" valign="middle">
+                                <Tr>
+                                  <tD aLiGN="center" vaLign=middle>
 
-                                  <table>
-                                     <tr>
-                                         <td valign="top" style="text-align: center; padding: 30px 0 10px 20px;">
+                                  <TAble>
+                                     <tR>
+                                         <Td ValigN=top stYlE="text-align: center; padding: 30px 0 10px 20px;">
 
-                                             <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 27px; line-height: 36px; color: #000000; font-weight: 1000;">Your time is important.</h1>
-                                         </td>
+                                             <H1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 27px; line-height: 36px; color: #000000; font-weight: 1000;">Your time is important.</H1>
+                                         </Td>
+
+                                     <tR>
+                                         <TD VAligN="top" sTYlE="font-weight: bold; text-align: center; padding: 10px 20px 15px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #252A3A;">
+                                             <P StylE="margin: 0; font-family: 'Montserrat', sans-serif;">Don't waste it running around the web searching for your documents, contacts, records, and emails. Use Omniscient instead to manage all of your data.<P>
+
                                      </tr>
-                                     <tr>
-                                         <td valign="top" style="font-weight: bold; text-align: center; padding: 10px 20px 15px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #252A3A;">
-                                             <p style="margin: 0; font-family: 'Montserrat', sans-serif;">Don't waste it running around the web searching for your documents, contacts, records, and emails. Use Omniscient instead to manage all of your data.<p>
-                                         </td>
-                                     </tr>
-                                     <tr>
-                                         <td valign="top" align="center" style="text-align: center; padding: 15px 0px 60px 0px;">
+                                     <Tr>
+                                         <TD vAlIgN=top aLIgN="center" sTylE="text-align: center; padding: 15px 0px 60px 0px;">
                                              <!-- Button : BEGIN -->
-                                             <center>
-                                             <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="text-align: center;">
-                                                 <tr>
-                                                     <td style="border-radius: 50px; background: #26a4d3; text-align: center;" class="button-td">
-                                                         <a href="http://omniscientcrm.com/" style="background: #26a4d3; border: 15px solid #26a4d3; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" class="button-a">
-                                                             <span style="color:#ffffff;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;VISIT OUR SITE&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                             <CenTeR>
+                                             <TaBLe ROLe=presentation ALiGN="center" CElLSPACInG=0 cElLPAddinG="0" bOrDer=0 cLAss=center-on-narrow stYLE="text-align: center;">
+                                                 <tR>
+                                                     <tD stYle="border-radius: 50px; background: #26a4d3; text-align: center;" ClASs="button-td">
+                                                         <a HREf=http://omniscientcrm.com/ stylE="background: #26a4d3; border: 15px solid #26a4d3; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" ClASs="button-a">
+                                                             <SPAn styLE="color:#ffffff;" ClAss="button-link">&nbsp;&nbsp;&nbsp;&nbsp;VISIT OUR SITE&nbsp;&nbsp;&nbsp;&nbsp;</sPan>
                                                          </a>
-                                                     </td>
-                                                 </tr>
-                                             </table>
-                                             </center>
+
+
+                                             </TabLe>
+                                             </CEnTER>
                                              <!-- Button : END -->
 
-                                         </td>
+
                                      </tr>
-                                  </table>
+                                  </TAbLE>
 
-                                  </td>
-                                </tr>
+                                  </TD>
 
-                                <tr>
-                                    <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
-                                </tr>
 
-                            </table>
+                                <tR>
+                                    <tD hEiGHT=20 STYlE="font-size:20px; line-height:20px;">&nbsp;</td>
+                                </TR>
+
+                            </tABle>
                             <!--[if mso]>
-                            </td>
-                            </tr>
-                            </table>
+
+
+                            </tABle>
                             <![endif]-->
-                        </div>
+                        </dIV>
                         <!--[if gte mso 9]>
-                        </v:textbox>
-                        </v:rect>
+                        </v:TexTbOx>
+                        </v:Rect>
                         <![endif]-->
-                    </td>
-                </tr>
+
+
                 <!-- HERO : END -->
 
                 <!-- INTRO : BEGIN -->
-                <tr>
-                    <td bgcolor="#ffffff">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 40px 40px 20px 40px; text-align: left;">
-                                    <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 26px; color: #333333; font-weight: bold;">INTEGRATION, DONE RIGHT.</h1>
-                                </td>
-                            </tr>
+                <Tr>
+                    <TD bgcOlor=#ffffff>
+                        <TaBle RoLe=presentation CellSPACinG=0 CeLLPaDding="0" BORDER=0 WiDTh=100%>
+                            <Tr>
+                                <td STyLe="padding: 40px 40px 20px 40px; text-align: left;">
+                                    <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 26px; color: #333333; font-weight: bold;">INTEGRATION, DONE RIGHT.</H1>
+
+                            </TR>
                             <!--
-                            <tr>
-                                <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:bold;">
-                                    <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            <TR>
+                                <TD STYLe="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:bold;">
+                                    <p StylE="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
-                                </td>
-                            </tr>
+                                    consequat.</P>
+
+
                           -->
-                            <tr>
-                                <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                                    <p style="margin: 0;"> Hello <firstname>,
-                                      <br />
-                                      <br />
+                            <TR>
+                                <td STyLe="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
+                                    <P STyLE="margin: 0;"> Hello <fiRStnAME>,
+                                      <bR />
+                                      <BR />
 
                                       At Omniscient, our philosophy is very simple: Integrate. We want to make sure that everything you need is within the click of a mouse.
-                                      Our company released the first and only software targeted at financial advisors that keeps your contacts, documents, emails, leads, and portfolios all in one place. Experience Omniscient today.</p>
+                                      Our company released the first and only software targeted at financial advisors that keeps your contacts, documents, emails, leads, and portfolios all in one place. Experience Omniscient today.
 
-                                </td>
-                            </tr>
+
+                            </tR>
                             <tr>
-                                <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                                    <p style="margin: 0;">Yours sincerely,</p>
-                                </td>
-                            </tr>
+                                <tD StylE="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
+                                    <P StylE="margin: 0;">Yours sincerely,</p>
+                                </Td>
 
-                            <tr>
-                                <td align="left" style="padding: 0px 40px 40px 40px;">
 
-                                    <table width="180" align="left">
-                                        <tr>
-                                          <td width="70">
-                                            <img src="https://media.licdn.com/dms/image/C4E03AQEN2STW7RdU2Q/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=ApvMGpVRSw1lhno5xFc-RI8nbwJ23uzNmRcTUdG6RNw" width="62" height="62" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                                          </td>
-                                          <td width="110">
+                            <Tr>
+                                <TD ALIgN=left STYle="padding: 0px 40px 40px 40px;">
 
-                                            <table width="" cellpadding="0" cellspacing="0" border="0">
-                                              <tr>
-                                                <td align="left" style="font-family: sans-serif; font-size:14px; line-height:20px; color:#222222; font-weight:bold;" class="body-text">
-                                                  <p style="font-family: 'Montserrat', sans-serif; font-size:14px; line-height:20px; color:#222222; font-weight:bold; padding:0; margin:0;" class="body-text">Felipe Luna</p>
-                                                </td>
+                                    <TABlE widtH=180 alIgN="left">
+                                        <TR>
+                                          <td wiDtH="70">
+                                            <IMg src="https://media.licdn.com/dms/image/C4E03AQEN2STW7RdU2Q/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=ApvMGpVRSw1lhno5xFc-RI8nbwJ23uzNmRcTUdG6RNw" WIdth=62 hEIghT=62 STYlE="margin:0; padding:0; border:none; display:block;" BORDer="0" AlT=>
+
+                                          <Td wIDTh="110">
+
+                                            <tAbLe WidtH= CelLPaDDInG="0" cELLSPacInG="0" boRDER=0>
+                                              <Tr>
+                                                <TD aliGn="left" sTyLe="font-family: sans-serif; font-size:14px; line-height:20px; color:#222222; font-weight:bold;" Class=body-text>
+                                                  <p Style="font-family: 'Montserrat', sans-serif; font-size:14px; line-height:20px; color:#222222; font-weight:bold; padding:0; margin:0;" clASS="body-text">Felipe Luna
+
                                               </tr>
                                               <tr>
-                                                <td align="left" style="font-family: sans-serif; font-size:14px; line-height:20px; color:#666666;" class="body-text">
-                                                  <p style="font-family: sans-serif; font-size:13px; line-height:20px; color:#666666; padding:0; margin:0;" class="body-text">CEO | Omniscient</p>
+                                                <tD aLIGn="left" styLE="font-family: sans-serif; font-size:14px; line-height:20px; color:#666666;" Class=body-text>
+                                                  <p StYLE="font-family: sans-serif; font-size:13px; line-height:20px; color:#666666; padding:0; margin:0;" CLass="body-text">CEO | Omniscient</p>
                                                 </td>
-                                              </tr>
-                                            </table>
+                                              </Tr>
+                                            </TAbLE>
 
 
-                                          </td>
-                                        </tr>
-                                    </table>
 
-                                </td>
-                            </tr>
 
-                        </table>
-                    </td>
-                </tr>
+                                    </TABlE>
+
+
+
+
+                        </tAbLE>
+                    </TD>
+
                 <!-- INTRO : END -->
 
                 <!-- CTA : BEGIN -->
-                <tr>
-                    <td bgcolor="#26a4d3">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 40px 40px 5px 40px; text-align: center;">
-                                    <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 24px; color: #ffffff; font-weight: bold;">FREE TRIAL</h1>
+                <Tr>
+                    <Td BGCOloR="#26a4d3">
+                        <tAble ROle=presentation CElLsPACing=0 CEllPaddING=0 bOrdeR="0" WiDTH=100%>
+                            <Tr>
+                                <Td sTyle="padding: 40px 40px 5px 40px; text-align: center;">
+                                    <H1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 24px; color: #ffffff; font-weight: bold;">FREE TRIAL</H1>
+
+
+                            <Tr>
+                                <td stYle="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #aad4ea; text-align: center; font-weight:normal;">
+                                    <P STYLE="margin: 0;">Don't just take our word for it. Try it out!
                                 </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #aad4ea; text-align: center; font-weight:normal;">
-                                    <p style="margin: 0;">Don't just take our word for it. Try it out!</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="middle" align="center" style="text-align: center; padding: 0px 20px 40px 20px;">
+                            </tR>
+                            <TR>
+                                <Td valigN="middle" aLIGn=center STylE="text-align: center; padding: 0px 20px 40px 20px;">
 
                                     <!-- Button : BEGIN -->
-                                    <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow">
-                                        <tr>
-                                            <td style="border-radius: 50px; background: #ffffff; text-align: center;" class="button-td">
-                                                <a href="http://omniscientcrm.com/free-trial/" style="background: #ffffff; border: 15px solid #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" class="button-a">
-                                                    <span style="color:#26a4d3;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;FREE DEMO&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    <tABle rOLe="presentation" AlIgN=center CElLsPAcing="0" CELlPadDINg="0" bORdER=0 cLaSS="center-on-narrow">
+                                        <Tr>
+                                            <TD sTYle="border-radius: 50px; background: #ffffff; text-align: center;" claSs=button-td>
+                                                <A HRef="http://omniscientcrm.com/free-trial/" STyLE="background: #ffffff; border: 15px solid #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" cLAsS=button-a>
+                                                    <SPAn STyLe=color:#26a4d3; CLaSs="button-link">&nbsp;&nbsp;&nbsp;&nbsp;FREE DEMO&nbsp;&nbsp;&nbsp;&nbsp;</spAN>
+                                                </A>
+                                            </TD>
+
+                                    </TabLE>
                                     <!-- Button : END -->
 
-                                </td>
-                            </tr>
 
-                        </table>
-                    </td>
-                </tr>
+                            </tR>
+
+                        </TaBLe>
+
+                </tR>
                 <!-- CTA : END -->
 
                 <!-- SOCIAL : BEGIN -->
 
-                <tr>
-                    <td bgcolor="#292828">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 30px 30px; text-align: center;">
-                                    <table align="center" style="text-align: center;">
-                                        <tr>
-                                          <td style="border-radius: 50px; background: #ffffff; text-align: center;" class="button-td">
-                                              <a href="http://omniscientcrm.com/contact-us/" style="background: #ffffff; border: 15px solid #ffffff; font-family: 'Montserrat', sans-serif; font-size: 10px; line-height: .5; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" padding-right="100px" class="button-a">
-                                                  <span style="color:#26a4d3;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;SUBSCRIBE TO MAIL&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                              </a>
-                                          </td>
-                                          <td width="10">&nbsp;</td>
-                                            <td>
-                                              <div class="tw">
-                                                <a href="https://twitter.com/OMNIGlobal2016">
-                                                  <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_twitter-512.png" width="30" height="30" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                                                </a>
-                                              </div>
-                                            </td>
-                                            <td width="10">&nbsp;</td>
-                                            <td>
-                                              <div class="fb">
-                                                <a href="https://www.facebook.com/OMNI2016/">
-                                                  <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_facebook-512.png" width="30" height="30" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                                                </a>
-                                              </div>
-                                            </td>
-                                            <td width="10">&nbsp;</td>
-                                            <td>
-                                              <div class="in">
-                                                <a href="https://www.linkedin.com/company/omni-global-group?">
-                                                    <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png" width="30" height="30" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                                                </a>
-                                              </div>
-                                            </td>
-                                            <td width="10">&nbsp;</td>
-                                            <td>
-                                              <div >
-                                                <a href="https://www.youtube.com/channel/UCzzSzF3WQ_A8Gtfy9TFH-zw">
-                                                  <img class="yt" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_youtube-512.png" width="30" height="30" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                                                </a>
-                                              </div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                <TR>
+                    <tD bgCOLoR=#292828>
+                        <TaBle rOLE="presentation" cellSPaCiNg="0" celLPaddiNG=0 bORDer=0 wIdTH=100%>
+                            <TR>
+                                <tD STyle="padding: 30px 30px; text-align: center;">
+                                    <tAblE ALigN=center stYLE="text-align: center;">
+                                        <tR>
+                                          <td StYlE="border-radius: 50px; background: #ffffff; text-align: center;" class="button-td">
+                                              <A HREf="http://omniscientcrm.com/contact-us/" StYLE="background: #ffffff; border: 15px solid #ffffff; font-family: 'Montserrat', sans-serif; font-size: 10px; line-height: .5; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" padding-RiGHt=100px ClaSs=button-a>
+                                                  <SPaN sTyLe="color:#26a4d3;" clASS="button-link">&nbsp;&nbsp;&nbsp;&nbsp;SUBSCRIBE TO MAIL&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>
+                                              </A>
 
-                                </td>
-                            </tr>
+                                          <tD WIdTH=10>&nbsp;
+                                            <tD>
+                                              <DiV clASs=tw>
+                                                <a href=https://twitter.com/OMNIGlobal2016>
+                                                  <iMg SRC="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_twitter-512.png" WIdTH=30 heIgHt=30 STylE="margin:0; padding:0; border:none; display:block;" bOrder="0" ALt=>
+                                                </A>
+                                              </div>
 
-                        </table>
-                    </td>
+                                            <TD Width="10">&nbsp;
+                                            <Td>
+                                              <DiV Class="fb">
+                                                <A HReF="https://www.facebook.com/OMNI2016/">
+                                                  <img sRC="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_facebook-512.png" widtH=30 heIGht=30 stYle="margin:0; padding:0; border:none; display:block;" bORDER=0 aLT="">
+                                                </A>
+                                              </Div>
+
+                                            <tD WIdtH="10">&nbsp;
+                                            <TD>
+                                              <DiV cLAsS="in">
+                                                <a HRef="https://www.linkedin.com/company/omni-global-group?">
+                                                    <imG SRC=https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png wiDtH=30 hEIghT=30 StyLE="margin:0; padding:0; border:none; display:block;" bORdER=0 alt="">
+                                                </a>
+                                              </div>
+                                            </Td>
+                                            <tD WIdTh=10>&nbsp;
+                                            <TD>
+                                              <Div >
+                                                <A hRef=https://www.youtube.com/channel/UCzzSzF3WQ_A8Gtfy9TFH-zw>
+                                                  <IMG cLAsS="yt" sRc="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_youtube-512.png" wIdth="30" HEIghT="30" STyle="margin:0; padding:0; border:none; display:block;" boRDEr="0" AlT=>
+                                                </A>
+                                              </DIv>
+                                            </TD>
+                                        </TR>
+                                    </taBLE>
+
+
+
+
+                        </TAbLe>
+
                 </tr>
                 <!-- SOCIAL : END -->
 
                 <!-- 1FOOTER : BEGIN -->
-                <tr>
-                    <td bgcolor="#ffffff">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <Tr>
+                    <Td bGCoLOR="#ffffff">
+                        <TABLE rOle=presentation cELlSpacING="0" CelLpADdiNg=0 BORDER="0" WiDth="100%">
+                            <tR>
+                                <TD STyle="padding: 40px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
+                                    <P sTyLE="margin: 0;">1900 The Alameda, San Jose, CA, 95126</p>
+
+                            </TR>
                             <tr>
-                                <td style="padding: 40px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                                    <p style="margin: 0;">1900 The Alameda, San Jose, CA, 95126</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                                    <p style="margin: 0;">This email was sent to you from sales@omnisrv.com</p>
-                                </td>
-                            </tr>
+                                <TD Style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
+                                    <p StyLe="margin: 0;">This email was sent to you from sales@omnisrv.com</P>
+
+                            </tR>
                             <!--
-                            <tr>
-                                <td style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                                    <p style="margin: 0;">%%Preferences%% | %%Browser%% | %%Forward%% | %%Unsubscribe%%</p>
+                            <tR>
+                                <Td STyle="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
+                                    <P STYLe="margin: 0;">%%Preferences%% | %%Browser%% | %%Forward%% | %%Unsubscribe%%
                                 </td>
-                            </tr>
+                            </Tr>
                           -->
                             <tr>
-                                <td style="padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                                    <p style="margin: 0;">Copyright &copy; 2017 <b>Omniscient</b>, All Rights Reserved.</p>
-                                </td>
+                                <td STyLE="padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
+                                    <p STYLE="margin: 0;">Copyright &copy; 2017 <b>Omniscient</b>, All Rights Reserved.</P>
+                                </tD>
                             </tr>
 
-                        </table>
-                    </td>
-                </tr>
+                        </tabLe>
+
+
                 <!-- FOOTER : END -->
 
-            </table>
+            </tABLe>
             <!-- Email Body : END -->
 
             <!--[if mso]>
-            </td>
-            </tr>
-            </table>
+            </TD>
+            </TR>
+            </taBlE>
             <![endif]-->
-        </div>
+        </diV>
 
-    </center>
-</body>
-</html>
+    </centEr>
