@@ -1,4 +1,4 @@
-﻿{*+**********************************************************************************
+{*+**********************************************************************************
 * The contents of this file are subject to the vtiger CRM Public License Version 1.1
 * ("License"); You may not use this file except in compliance with the License
 * The Original Code is: vtiger CRM Open Source
@@ -25,20 +25,18 @@
    background-color: transparent;
    color: black;
    }
-
    body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-}
-
-    #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
+   margin: 0;
+   font-family: Arial;
+   font-size: 17px;
+   }
+   #myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   }
    hr {
    margin-top: 15px;
    background-color: #7C7C7C;
@@ -185,21 +183,21 @@
    outline: 0;
    }
    .buttonBlue {
-   background-image: linear-gradient(to bottom, #00A956 0px, #00A956 100%)
+   background-image: linear-gradient(to bottom, #0097CE 0px, #0097CE 100%)
    }
    .buttonBlue:hover {
-   background-image: linear-gradient(to bottom, #87c1ff 0px, #87c1ff 100%)
-   background-color: #00A956;
-   box-shadow: 0px 15px 20px rgba(0,169,86, 0.4);
+   background-image: linear-gradient(to bottom, #0097CE 0px, #0097CE 100%)
+   background-color: #0097CE;
+   box-shadow: 0px 15px 20px rgba(0,151,206, 0.4);
    color: #fff;
    transform: translateY(-7px);
    }
    .slick-prev:before, .slick-next:before {
-      color: black !important;
+   color: black !important;
    }
    .ripples {
    position: absolute;
-   top: 0;
+   top: 0
    left: 0;
    width: 100%;
    height: 100%;
@@ -249,246 +247,249 @@
    }
    }
 </style>
-
 <body>
-
-<video autoplay muted loop id="myVideo">
-  <source src="layouts/v7/resources/marketing/videograss.mp4" type="video/mp4">
-
-</video>
-
-
-</body
->
-<span class="app-nav"></span>
-<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10" style="background-color: transparent;">
-   <div class="col-lg-4 col-md-5 col-sm-8 col-xs-8" style="background-color: transparent;">
-      <div class="loginDiv widgetHeight">
-         <img class="img-responsive user-logo" src="layouts/v7/skins/images/Vtiger.png">
-         <div>
-            <span class="{if !$ERROR}hide{/if} failureMessage" id="validationMessage">{$MESSAGE}</span>
-            <span class="{if !$MAIL_STATUS}hide{/if} successMessage">{$MESSAGE}</span>
-         </div>
-         <div id="loginFormDiv">
-            <form class="form-horizontal" method="POST" action="index.php">
-               <input type="hidden" name="module" value="Users"/>
-               <input type="hidden" name="action" value="Login"/>
-               <div class="group">
-                  <input id="username" type="text" name="username" placeholder="Username">
-                  <span class="bar"></span>
-                  <label>Username</label>
-               </div>
-               <div class="group">
-                  <input id="password" type="password" name="password" placeholder="Password">
-                  <span class="bar"></span>
-                  <label>Password</label>
-               </div>
-               <div class="group">
-                  <button type="submit" class="button buttonBlue" style="color: #FFFFFF">Sign in</button><br>
-                  <a class="forgotPasswordLink" style="color: #15c;" href="http://ompw.omnisrv.com/">Forgot password?</a>
-               </div>
-            </form>
-         </div>
-         <div id="forgotPasswordDiv" class="hide">
-            <form class="form-horizontal" action="forgotPassword.php" method="POST">
-               <div class="group">
-                  <input id="fusername" type="text" name="username" placeholder="Username" >
-                  <span class="bar"></span>
-                  <label>Username</label>
-               </div>
-               <div class="group">
-                  <input id="email" type="email" name="emailId" placeholder="Email" >
-                  <span class="bar"></span>
-                  <label>Email</label>
-               </div>
-               <div class="group">
-                  <button type="submit" class="button buttonBlue forgot-submit-btn">Submit</button><br>
-                  <span>Please enter details and submit<a class="forgotPasswordLink pull-right" style="color: #15c;">Back</a></span>
-               </div>
-            </form>
-         </div>
-      </div>
-   </div>
-   <div class="col-lg-2 col-md-1">
-   </div>
-
-   <!-- **************************** MARKETING **************************** -->
-   <!-- **************************** MARKETING **************************** -->
-   <!-- **************************** MARKETING **************************** -->
-   <!-- **************************** MARKETING **************************** -->
-   <!-- **************************** MARKETING **************************** -->
-   <!-- **************************** MARKETING **************************** -->
-   <!-- **************************** MARKETING **************************** -->
-   <!-- **************************** MARKETING **************************** -->
-   <div class="col-lg-4 col-md-4" >
-      <h1 align="center">Latest News</h1>
-      <div class="adCarousel">
-         <div class="overlay">
-            <img class="slideshow-img" src="layouts/v7/resources/marketing/img1.jpg">
-            <div class="text-block" align="center">
-               <h3> Omniscient CRM Rocks! </h3>
-               <p> Don't believe me? Try it out :) </p>
+   <video autoplay muted loop id="myVideo">
+      <source src="layouts/v7/resources/marketing/videograss.mp4" type="video/mp4">
+   </video>
+   <span class="app-nav"></span>
+   <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10" style="background-color: transparent;">
+      <div class="col-lg-4 col-md-5 col-sm-8 col-xs-8" style="background-color: transparent;">
+         <div class="loginDiv widgetHeight">
+            <img class="img-responsive user-logo" src="layouts/v7/resources/Images/logo.png">
+            <div>
+               <span class="{if !$ERROR}hide{/if} failureMessage" id="validationMessage">{$MESSAGE}</span>
+               <span class="{if !$MAIL_STATUS}hide{/if} successMessage">{$MESSAGE}</span>
             </div>
-         </div>
-         <div class="overlay">
-            <img class="slideshow-img" src="layouts/v7/resources/marketing/img2.jpg">
-            <div class="text-block">
-               <h3> This is the second slide </h3>
-               <p></p>
-            </div>
-         </div>
-         <div class="overlay">
-            <img class="slideshow-img" src="layouts/v7/resources/marketing/img3.jpg">
-            <div class="text-block">
-               <h3> 3</h3>
-               <p> This is some normal text. </p>
-            </div>
-         </div>
-         <div class="overlay">
-            <img class="slideshow-img" src="layouts/v7/resources/marketing/img4.jpg">
-            <div class="text-block">
-               <h3> Heading </h3>
-               <p> This is some normal text. </p>
-            </div>
-         </div>
-         <div class="overlay">
-            <img class="slideshow-img" src="layouts/v7/resources/marketing/img5.jpg">
-            <div class="text-block">
-               <h3> Heading </h3>
-               <p> This is some normal text. </p>
+            <div id="loginFormDiv">
+               <form class="form-horizontal" method="POST" action="index.php">
+                  <input type="hidden" name="module" value="Users"/>
+                  <input type="hidden" name="action" value="Login"/>
+                  <div class="group">
+                     <input id="username" type="text" name="username" placeholder="Username">
+                     <span class="bar"></span>
+                     <label>Username</label>
+                  </div>
+                  <div class="group">
+                     <input id="password" type="password" name="password" placeholder="Password">
+                     <span class="bar"></span>
+                     <label>Password</label>
+                  </div>
+                  <div class="group">
+                     <button type="submit" class="button buttonBlue" style="color: #FFFFFF">Sign in</button><br>
+                     <style>
+                        /* The Modal (background) */
+                        .modalDialog {
+                          position: fixed;
+                          font-family: Arial, Helvetica, sans-serif;
+                          top: 0;
+                          right: 0;
+                          bottom: 0;
+                          left: 0;
+                          background: rgba(0, 0, 0, 0.8);
+                          z-index: 99999;
+                          opacity:0;
+                          -webkit-transition: opacity 400ms ease-in;
+                          -moz-transition: opacity 400ms ease-in;
+                          transition: opacity 400ms ease-in;
+                          pointer-events: none;
+                      }
+                      .modalDialog:target {
+                          opacity:1;
+                          pointer-events: auto;
+                      }
+                      .modalDialog > div {
+                          width: 50%;
+                          position: relative;
+                          margin: 10% auto;
+                          padding: 5px 20px 13px 20px;
+                          border-radius: 10px;
+                          background: #fff;
+                          background: -moz-linear-gradient(#fff, #999);
+                          background: -webkit-linear-gradient(#fff, #999);
+                          background: -o-linear-gradient(#fff, #999);
+                      }
+                      .close {
+                          background: #606061;
+                          color: #FFFFFF;
+                          line-height: 25px;
+                          position: absolute;
+                          right: -12px;
+                          text-align: center;
+                          top: -10px;
+                          width: 24px;
+                          text-decoration: none;
+                          font-weight: bold;
+                          -webkit-border-radius: 12px;
+                          -moz-border-radius: 12px;
+                          border-radius: 12px;
+                          -moz-box-shadow: 1px 1px 3px #000;
+                          -webkit-box-shadow: 1px 1px 3px #000;
+                          box-shadow: 1px 1px 3px #000;
+                      }
+                      .close:hover {
+                          background: #00d9ff;
+                      }
+                     </style>
+                     <a href="#openModal">Forgot Password?</a>
+
+                  </div>
+               </form>
             </div>
          </div>
       </div>
+      <div class="col-lg-2 col-md-1">
+        <div id="openModal" class="modalDialog">
+   <div>	<a href="#close" title="Close" class="close">X</a>
+
+         <iframe class="iframe" width="100%" height="500px" src="https://ompw.omnisrv.com/pm/"></iframe>
    </div>
 </div>
-<!-- **************************** MARKETING **************************** -->
-<!-- **************************** MARKETING **************************** -->
-<!-- **************************** MARKETING **************************** -->
-<!-- **************************** MARKETING **************************** -->
-<!-- **************************** MARKETING **************************** -->
-<!-- **************************** MARKETING **************************** -->
-<!-- **************************** MARKETING **************************** -->
-<!-- **************************** MARKETING **************************** -->
+      </div>
 
+      <!-- **************************** MARKETING **************************** -->
+      <!-- **************************** MARKETING **************************** -->
+      <!-- **************************** MARKETING **************************** -->
+      <!-- **************************** MARKETING **************************** -->
+      <!-- **************************** MARKETING **************************** -->
+      <!-- **************************** MARKETING **************************** -->
+      <!-- **************************** MARKETING **************************** -->
+      <!-- **************************** MARKETING **************************** -->
+      <div class="col-lg-4 col-md-4" >
+         <h1 align="center">Latest News</h1>
+         <div class="adCarousel">
+            <div class="overlay">
+               <img class="slideshow-img" src="layouts/v7/resources/marketing/img1.jpg">
+               <div class="text-block" align="center">
+                  <h3> Omniscient CRM Rocks! </h3>
+                  <p> Don't believe me? Try it out :) </p>
+               </div>
+            </div>
+            <div class="overlay">
+               <img class="slideshow-img" src="layouts/v7/resources/marketing/img2.jpg">
+               <div class="text-block">
+                  <h3> This is the second slide </h3>
+                  <p></p>
+               </div>
+            </div>
+            <div class="overlay">
+               <img class="slideshow-img" src="layouts/v7/resources/marketing/img3.jpg">
+               <div class="text-block">
+                  <h3> 3</h3>
+                  <p> This is some normal text. </p>
+               </div>
+            </div>
+            <div class="overlay">
+               <img class="slideshow-img" src="layouts/v7/resources/marketing/img4.jpg">
+               <div class="text-block">
+                  <h3> Heading </h3>
+                  <p> This is some normal text. </p>
+               </div>
+            </div>
+            <div class="overlay">
+               <img class="slideshow-img" src="layouts/v7/resources/marketing/img5.jpg">
+               <div class="text-block">
+                  <h3> Heading </h3>
+                  <p> This is some normal text. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- **************************** MARKETING **************************** -->
+   <!-- **************************** MARKETING **************************** -->
+   <!-- **************************** MARKETING **************************** -->
+   <!-- **************************** MARKETING **************************** -->
+   <!-- **************************** MARKETING **************************** -->
+   <!-- **************************** MARKETING **************************** -->
+   <!-- **************************** MARKETING **************************** -->
+   <!-- **************************** MARKETING **************************** -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script>
+      jQuery(document).ready(function () {
+      	var validationMessage = jQuery('#validationMessage');
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-   jQuery(document).ready(function () {
-   	var validationMessage = jQuery('#validationMessage');
-   	var forgotPasswordDiv = jQuery('#forgotPasswordDiv');
+      	var loginFormDiv = jQuery('#loginFormDiv');
+      	loginFormDiv.find('#password').focus();
+/*
+      	loginFormDiv.find('a').click(function () {
+      		loginFormDiv.toggleClass('hide');
+      		validationMessage.addClass('hide');
+      	});
+*/
 
-   	var loginFormDiv = jQuery('#loginFormDiv');
-   	loginFormDiv.find('#password').focus();
+      	loginFormDiv.find('button').on('click', function () {
+      		var username = loginFormDiv.find('#username').val();
+      		var password = jQuery('#password').val();
+      		var result = true;
+      		var errorMessage = '';
+      		if (username === '') {
+      			errorMessage = 'Please enter valid username';
+      			result = false;
+      		} else if (password === '') {
+      			errorMessage = 'Please enter valid password';
+      			result = false;
+      		}
+      		if (errorMessage) {
+      			validationMessage.removeClass('hide').text(errorMessage);
+      		}
+      		return result;
+      	});
 
-   	loginFormDiv.find('a').click(function () {
-   		loginFormDiv.toggleClass('hide');
-   		forgotPasswordDiv.toggleClass('hide');
-   		validationMessage.addClass('hide');
-   	});
+      	jQuery('input').blur(function (e) {
+      		var currentElement = jQuery(e.currentTarget);
+      		if (currentElement.val()) {
+      			currentElement.addClass('used');
+      		} else {
+      			currentElement.removeClass('used');
+      		}
+      	});
 
-   	forgotPasswordDiv.find('a').click(function () {
-   		loginFormDiv.toggleClass('hide');
-   		forgotPasswordDiv.toggleClass('hide');
-   		validationMessage.addClass('hide');
-   	});
+      	var ripples = jQuery('.ripples');
+      	ripples.on('click.Ripples', function (e) {
+      		jQuery(e.currentTarget).addClass('is-active');
+      	});
 
-   	loginFormDiv.find('button').on('click', function () {
-   		var username = loginFormDiv.find('#username').val();
-   		var password = jQuery('#password').val();
-   		var result = true;
-   		var errorMessage = '';
-   		if (username === '') {
-   			errorMessage = 'Please enter valid username';
-   			result = false;
-   		} else if (password === '') {
-   			errorMessage = 'Please enter valid password';
-   			result = false;
-   		}
-   		if (errorMessage) {
-   			validationMessage.removeClass('hide').text(errorMessage);
-   		}
-   		return result;
-   	});
+      	ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {
+      		jQuery(e.currentTarget).removeClass('is-active');
+      	});
+      	loginFormDiv.find('#username').focus();
 
-   	forgotPasswordDiv.find('button').on('click', function () {
-   		var username = jQuery('#forgotPasswordDiv #fusername').val();
-   		var email = jQuery('#email').val();
+      	var slider = jQuery('.bxslider').bxSlider({
+      		auto: true,
+      		pause: 4000,
+      		nextText: "",
+      		prevText: "",
+      		autoHover: true
+      	});
+      	jQuery('.bx-prev, .bx-next, .bx-pager-item').live('click',function(){ slider.startAuto(); });
+      	jQuery('.bx-wrapper .bx-viewport').css('background-color', 'transparent');
+      	jQuery('.bx-wrapper .bxslider li').css('text-align', 'left');
+      	jQuery('.bx-wrapper .bx-pager').css('bottom', '-15px');
 
-   		var email1 = email.replace(/^\s+/, '').replace(/\s+$/, '');
-   		var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
-   		var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
+      	var params = {
+      		theme		: 'dark-thick',
+      		setHeight	: '100%',
+      		advanced	:	{
+      							autoExpandHorizontalScroll:true,
+      							setTop: 0
+      						}
+      	};
+      	jQuery('.scrollContainer').mCustomScrollbar(params);
 
-   		var result = true;
-   		var errorMessage = '';
-   		if (username === '') {
-   			errorMessage = 'Please enter valid username';
-   			result = false;
-   		} else if (!emailFilter.test(email1) || email == '') {
-   			errorMessage = 'Please enter valid email address';
-   			result = false;
-   		} else if (email.match(illegalChars)) {
-   			errorMessage = 'The email address contains illegal characters.';
-   			result = false;
-   		}
-   		if (errorMessage) {
-   			validationMessage.removeClass('hide').text(errorMessage);
-   		}
-   		return result;
-   	});
-   	jQuery('input').blur(function (e) {
-   		var currentElement = jQuery(e.currentTarget);
-   		if (currentElement.val()) {
-   			currentElement.addClass('used');
-   		} else {
-   			currentElement.removeClass('used');
-   		}
-   	});
-
-   	var ripples = jQuery('.ripples');
-   	ripples.on('click.Ripples', function (e) {
-   		jQuery(e.currentTarget).addClass('is-active');
-   	});
-
-   	ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {
-   		jQuery(e.currentTarget).removeClass('is-active');
-   	});
-   	loginFormDiv.find('#username').focus();
-
-   	var slider = jQuery('.bxslider').bxSlider({
-   		auto: true,
-   		pause: 4000,
-   		nextText: "",
-   		prevText: "",
-   		autoHover: true
-   	});
-   	jQuery('.bx-prev, .bx-next, .bx-pager-item').live('click',function(){ slider.startAuto(); });
-   	jQuery('.bx-wrapper .bx-viewport').css('background-color', 'transparent');
-   	jQuery('.bx-wrapper .bxslider li').css('text-align', 'left');
-   	jQuery('.bx-wrapper .bx-pager').css('bottom', '-15px');
-
-   	var params = {
-   		theme		: 'dark-thick',
-   		setHeight	: '100%',
-   		advanced	:	{
-   							autoExpandHorizontalScroll:true,
-   							setTop: 0
-   						}
-   	};
-   	jQuery('.scrollContainer').mCustomScrollbar(params);
-
-    $(".adCarousel").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      arrows: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      infinite: true,
-      adaptiveHeight: true,
-      adaptiveWidth: true,
-      lazyLoad: 'progressive'
-    });
-   });
-</script>
-</div>
+       $(".adCarousel").slick({
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: true,
+         arrows: true,
+         autoplay: true,
+         autoplaySpeed: 3000,
+         infinite: true,
+         adaptiveHeight: true,
+         adaptiveWidth: true,
+         lazyLoad: 'progressive'
+       });
+      });
+   </script>
+   </div>
+</body>
 {/strip}
