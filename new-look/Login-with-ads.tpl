@@ -1,4 +1,4 @@
-{*+**********************************************************************************
+﻿{*+**********************************************************************************
 * The contents of this file are subject to the vtiger CRM Public License Version 1.1
 * ("License"); You may not use this file except in compliance with the License
 * The Original Code is: vtiger CRM Open Source
@@ -6,21 +6,39 @@
 * Portions created by vtiger are Copyright (C) vtiger.
 * All Rights Reserved.
 ************************************************************************************}
-
-<!--Contributed in a major way ;) by Aadit Trivedi, Rishi Balakrishnan, and Ajosh Antony -->
-
 {* modules/Users/views/Login.php *}
 {strip}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
 <style>
-   body {
-   background: url(layouts/v7/resources/Images/login-background.jpg);
-   background-position: center;
-   background-size: cover;
-   width: 100%;
-   height: 96%;
-   background-repeat: no-repeat;
-	 background-color: transparent;
+   .slick-prev{
+   color:#0097CE;
    }
+   .slick-next{
+   color:#0097CE;
+   }
+   .slick-prev:hover {
+   background-color: transparent;
+   color: black;
+   }
+   .slick-next:hover {
+   background-color: transparent;
+   color: black;
+   }
+
+   body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+    #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
    hr {
    margin-top: 15px;
    background-color: #7C7C7C;
@@ -135,8 +153,9 @@
    bottom: 1px;
    position: absolute;
    height: 1px;
-   background: #35aa47;
+   background: #0097CE;
    transition: all 0.2s ease;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
    }
    .bar:before {
    left: 50%;
@@ -166,7 +185,17 @@
    outline: 0;
    }
    .buttonBlue {
-   background-image: linear-gradient(to bottom, #35aa47 0px, #35aa47 100%)
+   background-image: linear-gradient(to bottom, #00A956 0px, #00A956 100%)
+   }
+   .buttonBlue:hover {
+   background-image: linear-gradient(to bottom, #87c1ff 0px, #87c1ff 100%)
+   background-color: #00A956;
+   box-shadow: 0px 15px 20px rgba(0,169,86, 0.4);
+   color: #fff;
+   transform: translateY(-7px);
+   }
+   .slick-prev:before, .slick-next:before {
+      color: black !important;
    }
    .ripples {
    position: absolute;
@@ -176,6 +205,25 @@
    height: 100%;
    overflow: hidden;
    background: transparent;
+   }
+   .overlay {
+   position: relative;
+   font-family: Arial;
+   align: center;
+   }
+   .text-block {
+   margin: auto;
+   width: 100%
+   position: absolute;
+   background-color: black;
+   color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   opacity: 0.5;
+   }
+   .slideshow-img {
+   width: 100%;
+   height: 100%;
    }
    //Animations
    @keyframes inputHighlighter {
@@ -201,13 +249,20 @@
    }
    }
 </style>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="layouts/v7/resources/marketing/videograss.mp4" type="video/mp4">
+
+</video>
+
+
+</body
+>
 <span class="app-nav"></span>
-<div class="col-lg-12 col-md-12">
-   <!--<div class=”col-lg-4 col-lg-offset-4″>-->
-   <div class="col-lg-4 col-md-5">
+<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10" style="background-color: transparent;">
+   <div class="col-lg-4 col-md-5 col-sm-8 col-xs-8" style="background-color: transparent;">
       <div class="loginDiv widgetHeight">
          <img class="img-responsive user-logo" src="layouts/v7/skins/images/Vtiger.png">
          <div>
@@ -229,8 +284,8 @@
                   <label>Password</label>
                </div>
                <div class="group">
-                  <button type="submit" class="button buttonBlue">Sign in</button><br>
-                  <a class="forgotPasswordLink" style="color: #15c;">Forgot password?</a>
+                  <button type="submit" class="button buttonBlue" style="color: #FFFFFF">Sign in</button><br>
+                  <a class="forgotPasswordLink" style="color: #15c;" href="http://ompw.omnisrv.com/">Forgot password?</a>
                </div>
             </form>
          </div>
@@ -254,33 +309,8 @@
          </div>
       </div>
    </div>
-   <div class="col-lg-2 col-md-1"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   <div class="col-lg-2 col-md-1">
+   </div>
 
    <!-- **************************** MARKETING **************************** -->
    <!-- **************************** MARKETING **************************** -->
@@ -290,81 +320,43 @@
    <!-- **************************** MARKETING **************************** -->
    <!-- **************************** MARKETING **************************** -->
    <!-- **************************** MARKETING **************************** -->
-   <div class="col-lg-6 col-md-5" style="background-color: transparent;">
-      <div style="background-color: transparent;">
-         <div style="background-color: transparent;">
-            <script src="https://www.w3schools.com/lib/w3.js"></script>
-						<div class="container" style="width: 100%; height: 80%; background-color: transparent;">
-               <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                     <li data-target="#myCarousel" data-slide-to="1"></li>
-                     <li data-target="#myCarousel" data-slide-to="2"></li>
-										 <li data-target="#myCarousel" data-slide-to="3"></li>
-										 <li data-target="#myCarousel" data-slide-to="4"></li>
-                  </ol>
-                  <div class="carousel-inner" align="center" style="background-color: transparent;">
-                     <div class="item active">
-                        <img src="layouts/v7/resources/marketing/img1.jpg" alt="Los Angeles">
-                        <div class="carousel-caption">
-													 <!-- HEADER FOR FIRST SLIDE -->
-                           <h3>Los Angeles</h3>
-													 <!--TEXT FOR FIRST SLIDE -->
-                           <p>LA is always so much fun!</p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <img src="layouts/v7/resources/marketing/img2.jpg" alt="Chicago">
-                        <div class="carousel-caption">
-													<!-- HEADER FOR SECOND SLIDE -->
-                           <h3>Chicago</h3>
-													 <!-- TEXT FOR SECOND SLIDE-->
-                           <p>Thank you, Chicago!</p>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <img src="layouts/v7/resources/marketing/img3.jpg" alt="New York">
-                        <div class="carousel-caption">
-													<!-- HEADER FOR THIRD SLIDE -->
-                           <h3>New York</h3>
-													 <!-- TEXT FOR THIRD SLIDE -->
-													 <p> NEW YORK </p>
-                        </div>
-                     </div>
-										 <div class="item">
-                        <img src="layouts/v7/resources/marketing/img4.jpg" alt="Chicago">
-                        <div class="carousel-caption">
-													<!-- HEADER FOR FOURTH IMAGE -->
-                           <h3>Chicago</h3>
-													 <!-- TEXT FOR FOURTH IMAGE -->
-                           <p>Thank you, Chicago!</p>
-                        </div>
-                     </div>
-										 <div class="item">
-                        <img src="layouts/v7/resources/marketing/img5.jpg" alt="Chicago">
-                        <div class="carousel-caption">
-													<!-- HEADER FOR FIFTH IMAGE -->
-                           <h3>Chicago</h3>
-													 <!-- TEXT FOR FIFTH IMAGE -->
-                           <p>Thank you, Chicago!</p>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Left and right controls -->
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                  </a>
-               </div>
+   <div class="col-lg-4 col-md-4" >
+      <h1 align="center">Latest News</h1>
+      <div class="adCarousel">
+         <div class="overlay">
+            <img class="slideshow-img" src="layouts/v7/resources/marketing/img1.jpg">
+            <div class="text-block" align="center">
+               <h3> Omniscient CRM Rocks! </h3>
+               <p> Don't believe me? Try it out :) </p>
             </div>
-            <script>
-               w3.slideshow(".nature", 2000);
-            </script>
+         </div>
+         <div class="overlay">
+            <img class="slideshow-img" src="layouts/v7/resources/marketing/img2.jpg">
+            <div class="text-block">
+               <h3> This is the second slide </h3>
+               <p></p>
+            </div>
+         </div>
+         <div class="overlay">
+            <img class="slideshow-img" src="layouts/v7/resources/marketing/img3.jpg">
+            <div class="text-block">
+               <h3> 3</h3>
+               <p> This is some normal text. </p>
+            </div>
+         </div>
+         <div class="overlay">
+            <img class="slideshow-img" src="layouts/v7/resources/marketing/img4.jpg">
+            <div class="text-block">
+               <h3> Heading </h3>
+               <p> This is some normal text. </p>
+            </div>
+         </div>
+         <div class="overlay">
+            <img class="slideshow-img" src="layouts/v7/resources/marketing/img5.jpg">
+            <div class="text-block">
+               <h3> Heading </h3>
+               <p> This is some normal text. </p>
+            </div>
          </div>
       </div>
    </div>
@@ -379,75 +371,7 @@
 <!-- **************************** MARKETING **************************** -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-   <div class="col-lg-5 newsDiv">
-     <div class="marketingDiv widgetHeight">
-       {if $JSON_DATA}
-         {assign var=COUNTER value=0}
-         {foreach key=BLOCK_NAME item=BLOCKS_DATA from=$JSON_DATA}
-           {if $BLOCKS_DATA}
-             <div>
-               {assign var=COUNTER value=$COUNTER+1}
-               <h4  >{$BLOCKS_DATA[0].heading}</h4>
-               {foreach item=BLOCK_DATA from=$BLOCKS_DATA}
-                 <div class="row">
-                   {if $BLOCK_DATA.image}
-                     <div class="col-lg-4" style="min-height: 100px;"><img src="{$BLOCK_DATA.image}" style="width: 100%;height: 100%;margin-top: 10px;"/></div>
-                     <div class="col-lg-8">
-                   {else}
-                     <div class="col-lg-12">
-                   {/if}
-                     <div title="{$BLOCK_DATA.summary}">
-                       <h3  ><b>{$BLOCK_DATA.displayTitle}</b></h3>
-                       <p  >{$BLOCK_DATA.displaySummary}</p><br><br>
-                     </div>
-                     <a href="{$BLOCK_DATA.url}" target="_blank"><u  >{$BLOCK_DATA.urlalt}</u></a>
-                   {if $BLOCK_DATA.image}
-                     </div>
-                   {else}
-                     </div>
-                   {/if}
-                 </div>
-               {/foreach}
-             </div>
-             {if $COUNTER neq $DATA_COUNT}
-               <hr>
-             {/if}
-           {/if}
-         {/foreach}
-       {else}
-         <div class="inActiveImgDiv">
-           <div>
-             <h4>Get more out of Vtiger with extensions from</h4>
-             <h4>Vtiger Marketplace</h4>
-           </div>
-           <a href="https://marketplace.vtiger.com/app/listings" target="_blank" style="margin-right: 25px;"><img src="layouts/v7/resources/Images/extensionstore.png" style="width: 85%; height: 100%; margin-top: 25px;"/></a>
-         </div>
-       {/if}
-       </div>
-     </div>
-   -->
-</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
    jQuery(document).ready(function () {
    	var validationMessage = jQuery('#validationMessage');
@@ -551,21 +475,20 @@
    						}
    	};
    	jQuery('.scrollContainer').mCustomScrollbar(params);
+
+    $(".adCarousel").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      infinite: true,
+      adaptiveHeight: true,
+      adaptiveWidth: true,
+      lazyLoad: 'progressive'
+    });
    });
 </script>
 </div>
-<div>
-
 {/strip}
-
-
-
-<!-- INSTRUCTIONS FOR CHANGING THE HEADERS AND DESCRIPTION TEXT ASSOSCIATED WITH EACH IMAGE
-
-To change the text and the headers assosciated with each image:
-	For the first image, the header is on line 309 and the description text is on line 311
-	For the second image, the header is on line 318 and the description text is on line 320
-	For the third image, the header is on line 327 and the description text is on line 329
-	For the fourth image, the header is on line 336 and the description text is on line 338
-	For the fifth image, the header is on line 345 and the description text is on line 347
--->
