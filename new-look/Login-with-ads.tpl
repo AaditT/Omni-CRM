@@ -332,25 +332,29 @@
                     <p style="font-size: 10px">By signing in you agree to our <u><a style="color: blue" href="#openTC">Terms and Conditions</a></u></p>
                      <button type="submit" class="button buttonBlue" style="color: #FFFFFF">Sign in</button><br>
                      <a style="color: blue; font-size: 12px" href="#openModal">Forgot Password?</a>
-
-
                   </div>
                </form>
             </div>
          </div>
       </div>
       <div class="col-lg-2 col-md-1">
+        <div id="openTC" class="modalDialog">
+          <div>	<a href="#close" title="Close" class="close">X</a>
+            <iframe class="iframe" width="100%" height="500px" src="layouts/v7/modules/Users/tnc.html"></iframe>
+          </div>
+        </div>
         <div id="openModal" class="modalDialog">
           <div>	<a href="#close" title="Close" class="close">X</a>
             <iframe class="iframe" width="100%" height="500px" src="https://ompw.omnisrv.com/pm/"></iframe>
           </div>
         </div>
-        <div id="openTC" class="modalDialog">
-          <div>	<a href="#close" title="Close" class="close">X</a>
-            <iframe class="iframe" width="100%" height="500px" src="https://www.google.com/"></iframe>
-          </div>
-        </div>
       </div>
+
+
+
+
+
+
 
       <!-- **************************** MARKETING **************************** -->
       <!-- **************************** MARKETING **************************** -->
@@ -365,28 +369,28 @@
          <div class="adCarousel">
             <div class="overlay">
                <img class="slideshow-img" src="layouts/v7/resources/marketing/img1.jpg">
-               <div class="text-block slideshow-img">
+               <div class="text-block lazyload">
                   <h3> Omniscient CRM Rocks! </h3>
                   <p> Don't believe me? Try it out :) </p>
                </div>
             </div>
             <div class="overlay">
                <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img2.jpg">
-               <div class="text-block slideshow-img">
+               <div class="text-block lazyload">
                   <h3> This is the second slide </h3>
                   <p> This is some texty</p>
                </div>
             </div>
             <div class="overlay">
                <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img3.jpg">
-               <div class="text-block slideshow-img" >
+               <div class="text-block lazyload" >
                   <h3> 3</h3>
                   <p> This is some normal text. </p>
                </div>
             </div>
             <div class="overlay">
                <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img4.jpg">
-               <div class="text-block slideshow-img">
+               <div class="text-block lazyload">
                   <h3> Heading </h3>
                   <p> This is some normal text. </p>
                </div>
@@ -394,7 +398,7 @@
             <div class="overlay">
 
                <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img5.jpg">
-               <div class="text-block slideshow-img">
+               <div class="text-block lazyload">
                   <h3> Heading </h3>
                   <p> This is some normal text. </p>
                </div>
@@ -414,16 +418,8 @@
    <script>
       jQuery(document).ready(function () {
       	var validationMessage = jQuery('#validationMessage');
-
       	var loginFormDiv = jQuery('#loginFormDiv');
       	loginFormDiv.find('#password').focus();
-/*
-      	loginFormDiv.find('a').click(function () {
-      		loginFormDiv.toggleClass('hide');
-      		validationMessage.addClass('hide');
-      	});
-*/
-
       	loginFormDiv.find('button').on('click', function () {
       		var username = loginFormDiv.find('#username').val();
       		var password = jQuery('#password').val();
@@ -441,7 +437,6 @@
       		}
       		return result;
       	});
-
       	jQuery('input').blur(function (e) {
       		var currentElement = jQuery(e.currentTarget);
       		if (currentElement.val()) {
@@ -450,17 +445,14 @@
       			currentElement.removeClass('used');
       		}
       	});
-
       	var ripples = jQuery('.ripples');
       	ripples.on('click.Ripples', function (e) {
       		jQuery(e.currentTarget).addClass('is-active');
       	});
-
       	ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {
       		jQuery(e.currentTarget).removeClass('is-active');
       	});
       	loginFormDiv.find('#username').focus();
-
       	var slider = jQuery('.bxslider').bxSlider({
       		auto: true,
       		pause: 4000,
@@ -472,7 +464,6 @@
       	jQuery('.bx-wrapper .bx-viewport').css('background-color', 'transparent');
       	jQuery('.bx-wrapper .bxslider li').css('text-align', 'left');
       	jQuery('.bx-wrapper .bx-pager').css('bottom', '-15px');
-
       	var params = {
       		theme		: 'dark-thick',
       		setHeight	: '100%',
@@ -482,7 +473,6 @@
       						}
       	};
       	jQuery('.scrollContainer').mCustomScrollbar(params);
-
        $(".adCarousel").slick({
          slidesToShow: 1,
          slidesToScroll: 1,
