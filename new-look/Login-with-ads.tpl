@@ -247,6 +247,60 @@
    }
    }
 </style>
+<style>
+   /* The Modal (background) */
+   .modalDialog {
+     position: fixed;
+     font-family: Arial, Helvetica, sans-serif;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.8);
+     z-index: 99999;
+     opacity:0;
+     -webkit-transition: opacity 400ms ease-in;
+     -moz-transition: opacity 400ms ease-in;
+     transition: opacity 400ms ease-in;
+     pointer-events: none;
+ }
+ .modalDialog:target {
+     opacity:1;
+     pointer-events: auto;
+ }
+ .modalDialog > div {
+     width: 50%;
+     position: relative;
+     margin: 10% auto;
+     padding: 5px 20px 13px 20px;
+     border-radius: 10px;
+     background: #fff;
+     background: -moz-linear-gradient(#fff, #999);
+     background: -webkit-linear-gradient(#fff, #999);
+     background: -o-linear-gradient(#fff, #999);
+ }
+ .close {
+     background: #606061;
+     color: #FFFFFF;
+     line-height: 25px;
+     position: absolute;
+     right: -12px;
+     text-align: center;
+     top: -10px;
+     width: 24px;
+     text-decoration: none;
+     font-weight: bold;
+     -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+     border-radius: 12px;
+     -moz-box-shadow: 1px 1px 3px #000;
+     -webkit-box-shadow: 1px 1px 3px #000;
+     box-shadow: 1px 1px 3px #000;
+ }
+ .close:hover {
+     background: #00d9ff;
+ }
+</style>
 <body>
    <video autoplay muted loop id="myVideo">
       <source src="layouts/v7/resources/marketing/videograss.mp4" type="video/mp4">
@@ -275,62 +329,10 @@
                      <label>Password</label>
                   </div>
                   <div class="group">
+                    <p style="font-size: 10px">By signing in you agree to our <u><a style="color: blue" href="#openTC">Terms and Conditions</a></u></p>
                      <button type="submit" class="button buttonBlue" style="color: #FFFFFF">Sign in</button><br>
-                     <style>
-                        /* The Modal (background) */
-                        .modalDialog {
-                          position: fixed;
-                          font-family: Arial, Helvetica, sans-serif;
-                          top: 0;
-                          right: 0;
-                          bottom: 0;
-                          left: 0;
-                          background: rgba(0, 0, 0, 0.8);
-                          z-index: 99999;
-                          opacity:0;
-                          -webkit-transition: opacity 400ms ease-in;
-                          -moz-transition: opacity 400ms ease-in;
-                          transition: opacity 400ms ease-in;
-                          pointer-events: none;
-                      }
-                      .modalDialog:target {
-                          opacity:1;
-                          pointer-events: auto;
-                      }
-                      .modalDialog > div {
-                          width: 50%;
-                          position: relative;
-                          margin: 10% auto;
-                          padding: 5px 20px 13px 20px;
-                          border-radius: 10px;
-                          background: #fff;
-                          background: -moz-linear-gradient(#fff, #999);
-                          background: -webkit-linear-gradient(#fff, #999);
-                          background: -o-linear-gradient(#fff, #999);
-                      }
-                      .close {
-                          background: #606061;
-                          color: #FFFFFF;
-                          line-height: 25px;
-                          position: absolute;
-                          right: -12px;
-                          text-align: center;
-                          top: -10px;
-                          width: 24px;
-                          text-decoration: none;
-                          font-weight: bold;
-                          -webkit-border-radius: 12px;
-                          -moz-border-radius: 12px;
-                          border-radius: 12px;
-                          -moz-box-shadow: 1px 1px 3px #000;
-                          -webkit-box-shadow: 1px 1px 3px #000;
-                          box-shadow: 1px 1px 3px #000;
-                      }
-                      .close:hover {
-                          background: #00d9ff;
-                      }
-                     </style>
-                     <a href="#openModal">Forgot Password?</a>
+                     <a style="color: blue; font-size: 12px" href="#openModal">Forgot Password?</a>
+
 
                   </div>
                </form>
@@ -339,11 +341,15 @@
       </div>
       <div class="col-lg-2 col-md-1">
         <div id="openModal" class="modalDialog">
-   <div>	<a href="#close" title="Close" class="close">X</a>
-
-         <iframe class="iframe" width="100%" height="500px" src="https://ompw.omnisrv.com/pm/"></iframe>
-   </div>
-</div>
+          <div>	<a href="#close" title="Close" class="close">X</a>
+            <iframe class="iframe" width="100%" height="500px" src="https://ompw.omnisrv.com/pm/"></iframe>
+          </div>
+        </div>
+        <div id="openTC" class="modalDialog">
+          <div>	<a href="#close" title="Close" class="close">X</a>
+            <iframe class="iframe" width="100%" height="500px" src="https://www.google.com/"></iframe>
+          </div>
+        </div>
       </div>
 
       <!-- **************************** MARKETING **************************** -->
@@ -354,40 +360,41 @@
       <!-- **************************** MARKETING **************************** -->
       <!-- **************************** MARKETING **************************** -->
       <!-- **************************** MARKETING **************************** -->
-      <div class="col-lg-4 col-md-4" >
-         <h1 align="center">Latest News</h1>
+
+      <div class="col-lg-4 col-md-4" style="display: inline-block; padding: 50px 0px 0px 0px">
          <div class="adCarousel">
             <div class="overlay">
                <img class="slideshow-img" src="layouts/v7/resources/marketing/img1.jpg">
-               <div class="text-block" align="center">
+               <div class="text-block slideshow-img">
                   <h3> Omniscient CRM Rocks! </h3>
                   <p> Don't believe me? Try it out :) </p>
                </div>
             </div>
             <div class="overlay">
-               <img class="slideshow-img" src="layouts/v7/resources/marketing/img2.jpg">
-               <div class="text-block">
+               <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img2.jpg">
+               <div class="text-block slideshow-img">
                   <h3> This is the second slide </h3>
-                  <p></p>
+                  <p> This is some texty</p>
                </div>
             </div>
             <div class="overlay">
-               <img class="slideshow-img" src="layouts/v7/resources/marketing/img3.jpg">
-               <div class="text-block">
+               <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img3.jpg">
+               <div class="text-block slideshow-img" >
                   <h3> 3</h3>
                   <p> This is some normal text. </p>
                </div>
             </div>
             <div class="overlay">
-               <img class="slideshow-img" src="layouts/v7/resources/marketing/img4.jpg">
-               <div class="text-block">
+               <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img4.jpg">
+               <div class="text-block slideshow-img">
                   <h3> Heading </h3>
                   <p> This is some normal text. </p>
                </div>
             </div>
             <div class="overlay">
-               <img class="slideshow-img" src="layouts/v7/resources/marketing/img5.jpg">
-               <div class="text-block">
+
+               <img class="slideshow-img" data-lazy="layouts/v7/resources/marketing/img5.jpg">
+               <div class="text-block slideshow-img">
                   <h3> Heading </h3>
                   <p> This is some normal text. </p>
                </div>
